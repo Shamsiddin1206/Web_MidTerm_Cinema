@@ -1,5 +1,8 @@
 # Web_MidTerm_Cinema
 
+## Project Structure
+
+```
 cinex/
 ├── index.html               # HTML entry point
 ├── vite.config.js           # Vite configuration
@@ -30,6 +33,8 @@ npm run dev
 
 # 3. Open in browser
 http://localhost:5173
+```
+
 
 ## Features
 
