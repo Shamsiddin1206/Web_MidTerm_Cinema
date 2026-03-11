@@ -1,0 +1,76 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Ranglar */
+  --cream:       #f5f3ee;
+  --cream2:      #ede9e0;
+  --sand:        #d9d2c3;
+  --ink:         #1a1a2e;
+  --ink-light:   #4a4a6a;
+  --ink-muted:   #8a8aaa;
+  --coral:       #e05c3a;
+  --coral-light: #f07a5a;
+  --teal:        #2a7f7f;
+  --teal-light:  #3aa0a0;
+  --gold:        #c8963c;
+
+  /* Joy ranglari */
+  --seat-open:   #ffffff;
+  --seat-open-b: #c8d0d8;
+  --seat-hover:  #dff0ed;
+  --seat-hover-b:#2a7f7f;
+  --seat-sel:    #2a7f7f;
+  --seat-sel-b:  #1d5c5c;
+  --seat-res:    #e8e3d8;
+  --seat-res-b:  #b8b0a0;
+  --seat-occ:    #f2c4b8;
+  --seat-occ-b:  #d08070;
+
+  /* Spacing */
+  --page-padding: 36px;
+  --radius:       10px;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+}
+
+/* Shared tag pill */
+.tag {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: 4px;
+  background: var(--cream2);
+  color: var(--ink-light);
+}
+.tag.rating {
+  background: var(--ink);
+  color: #fff;
+}
+
+/* Shared section label */
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--sand);
+}
